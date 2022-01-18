@@ -1,0 +1,206 @@
+@font-face{
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+body, h1, h2, ul, dl, dd{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+body{
+    background-color: black;
+    text-align:center;
+}
+
+.wrapper{
+    padding: 0 20px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.cover{
+    color: aliceblue;
+    padding-top: 20%;
+    padding-bottom: 10%;
+    text-align: center;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: bottom;
+    transition: paccing .5s;
+}
+
+.cover-title{
+    font-size: 15vw;
+    font-weight: normal;
+    font-family: abster;
+    line-height: 1;
+    transition: font-size .5s;
+}
+
+.card{
+    background-color: white;
+    color: #999;
+    padding: 0 20px 20px 20px;
+    border-radius: 30px;
+}
+
+.card-title:after{
+    content: ' ';
+    position: absolute;
+    right: -60px;;
+    top: 50%;
+    background-color: white;
+    border: 6px solid dodgerblue;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    transform: translate(50%,-50%);
+    z-index: 10;
+    background-color: white;
+}
+
+.card-icon {
+    width: 50px;
+    height: auto;
+    vertical-align: top;
+    margin: -35px 30px 30px;
+}
+
+.card-title{
+    font-size: 10vw;
+    color: dodgerblue;
+    display: inline-block;
+    font-family: 'impact';
+    line-height: 1;
+    margin: 20px;
+    position: relative;
+}
+.timeline{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.timeline:after{
+    content:' ';
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    z-index:-1;
+    margin-top: 20px;
+    top: 5vw;
+    bottom: 0;
+    width: 6px;
+    margin-left: -3px;
+}
+
+
+.timeline-item{
+    margin-top: 70px;
+}
+
+.card-definition{
+    margin: 40px;
+}
+
+.card-definition dt{
+    font-size: 25px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.card-definition dt span{
+    color: dodgerblue;
+    display: block;
+    font-size: 0.5em;
+}
+
+.card-definition dd {
+
+}
+
+@media (min-width: 720px ){
+    .timeline-item{
+        width: 50%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        margin-left: auto;
+        margin-top: -150px;
+        margin-bottom: -200px;
+        text-align: left;
+    }
+    .card-title{
+        font-size: 10vw;
+    }
+    .cover{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .cover-title{
+        font-size: 15vw;
+    }
+    .card{
+        position: relative;
+    }
+    .card-icon{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .timeline-item:nth-child(even) .card-icon{
+        left: auto;
+        right: 0;
+    }
+
+    .timeline-item:nth-child(even) .card-title:after{
+        left: -60px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+// 여기 부터 아래로 중복
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cover .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+.cover .nav ul li{
+    display: inline-block;
+    margin:0 10px;
+}
+
+.cover .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.cover .nav ul li a:hover{
+    color: #1fdfdf;
+}
+
+

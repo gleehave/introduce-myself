@@ -1,0 +1,178 @@
+@font-face{
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+body, ul, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: normal;
+}
+
+
+body {
+    font-family: 'arial';
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: bottom;
+    color: #333;
+    font-size: 14px;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 1.1;
+    color: white;
+}
+
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.price {
+    display: flex;
+    margin: 0 -6px;
+}
+
+.price-item {
+    flex-basis: 33.33333333%;
+    margin: 0 6px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+.price-item.most {
+    margin: -20px 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.price-item p span {
+    color: #999;
+    display: block;
+}
+
+.price-item-header {
+
+}
+
+.price-item-contents {
+    background-color: #efefef;
+    padding: 14px;
+    font-size: 12px;
+}
+
+.price-item-header,
+.price-item-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.price-item-header h2 {
+    margin-bottom: 14px;
+}
+
+.price-item-footer {
+    margin-top: auto;
+}
+
+.list {
+
+}
+
+.list-item {
+    display: flex;
+}
+
+.list-item + .list-item {
+    margin-top: 0.4em;
+}
+
+.list-item-icon {
+    fill: currentColor;
+    margin-right: 0.4em;
+    flex-shrink: 0;
+    color: green;
+}
+
+.tag {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.tag span {
+    font-size: 0.6em;
+    margin: 0 0.2em;
+}
+
+.button {
+    background-color: dodgerblue;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+
+////
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cover .header{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cover .header h1 a{
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+.cover .nav ul li{
+    display: inline-block;
+    margin:0 10px;
+}
+
+.cover .nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.cover .nav ul li a:hover{
+    color: #1fdfdf;
+}
+
+
+
+
